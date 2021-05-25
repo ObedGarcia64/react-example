@@ -14,7 +14,7 @@ class Badge extends Component {
                     </div>
                     <div className=" Badge__userInfo container mt-5 mb-1">
                         <div className="Badge__userImage">
-                            <img src={ProfilePic} alt="Profile_picture"  />
+                            <img src={this.props.picture} alt="Profile_picture"  />
                         </div>
                         <h4 className="text-center mt-5">Fulanito de Tal<i> 28</i></h4>
                         <p className="text-center">Tangamandapio city</p>
@@ -30,7 +30,7 @@ class Badge extends Component {
                                 <p className="text-center">Likes</p>
                             </div>
                             <div className="col">
-                            <h4 className="text-center fw bold">1.05k</h4>
+                            <h4 className="text-center fw bold">1.5k</h4>
                                 <p className="text-center">Pictures</p>
                             </div>
                         </div>

@@ -1,7 +1,10 @@
-import Badge from './components/Badge'
+import React from 'react';
+
 function App() {
   return (
-    <Badge></Badge>    
+    <React.Fragment>
+
+    </React.Fragment>
   );
 }
 
