@@ -6,7 +6,7 @@ class Header extends React.Component{
         return(
             <React.Fragment>
                 <div className="Header">
-                    <img src="http://pngimg.com/uploads/bmw_logo/bmw_logo_PNG19705.png" alt="logo" />
+                    <img src="http://pngimg.com/uploads/bmw_logo/bmw_logo_PNG19705.png" alt="logo" width="50" height="50"/>
                 </div>
             </React.Fragment>
         );
