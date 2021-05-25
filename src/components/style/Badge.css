@@ -1,4 +1,6 @@
 .Badge{
+    display: flex;
+    flex-direction: column;
     max-width: 350px;
     min-height: 400px;
     border-radius: 15px;
@@ -14,29 +16,46 @@
 }
 
 .Badge_userInfo{
-
+    position: relative;
 }
 
 .Badge_userInfo p{
-
+    font-size: small;
+    color: rgb(155, 155, 155);
 }
 
 .Badge__userImage{
-
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border:5px solid white;
+    background: white;
+    align-self: center;
+    overflow: hidden;
+    position: absolute;
+    left: 150px;
+    top: 120px;
+    z-index: 1;
 }
 
 .Badge__userImage img{
-
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .Badge__info{
-
+    border-top: 1px solid rgb(230,230,230);
 }
 
 .Badge__info p{
-
+    font-weight: 100;
+    font-size: smaller;
+    color: rgb(155, 155, 155);
 }
 
 i{
-
+    font-style: normal;
+    font-weight: 100;
+    color: rgb(155, 155, 155);
 }
