@@ -26,9 +26,9 @@ class BadgeForm extends Component{
                             <input 
                             type="text" 
                             className="form-control"
-                            name="profile_pic_url"
+                            name="profile_picture"
                             onChange={this.props.onChange}
-                            value={this.props.formValues.name} 
+                            value={this.props.formValues.profile_picture} 
                             />
                         </div>
                         <div className="form-group mb-2">
@@ -38,9 +38,9 @@ class BadgeForm extends Component{
                             <input 
                             type="text" 
                             className="form-control"
-                            name="badge_hero_url"
+                            name="header_picture"
                             onChange={this.props.onChange}
-                            value={this.props.formValues.name} 
+                            value={this.props.formValues.header_picture} 
                             />
                         </div>
                         <div className="form-group mb-2">
@@ -50,9 +50,9 @@ class BadgeForm extends Component{
                             <input 
                             type="text" 
                             className="form-control"
-                            name="Age"
+                            name="age"
                             onChange={this.props.onChange}
-                            value={this.props.formValues.name} 
+                            value={this.props.formValues.age} 
                             />
                         </div>
                         <div className="form-group mb-2">
@@ -62,11 +62,11 @@ class BadgeForm extends Component{
                             <input 
                             type="text" 
                             className="form-control"
-                            name="City"
+                            name="city"
                             onChange={this.props.onChange}
-                            value={this.props.formValues.name} 
+                            value={this.props.formValues.city} 
                             />
-                            <button type="submit" className="Submit_Button">
+                            <button type="submit" className="Submit__button">
                                 Save
                             </button>
                         </div>
