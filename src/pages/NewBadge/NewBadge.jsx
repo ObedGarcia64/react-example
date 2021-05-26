@@ -13,7 +13,7 @@ class NewBadge extends React.Component{
             header_picture:"",
             profile_picture:"",
             name:"",
-            Age:"",
+            age:"",
             city:"",
             followers:"",
             likes:"",
@@ -30,6 +30,13 @@ class NewBadge extends React.Component{
                         <Badge
                             header_picture = {this.state.form.header_picture || "https://coatepec.gob.mx/wp-content/uploads/2019/09/4K-Moving-Stars-Live-Wallpaper-1.jpg"}
                             profile_picture = {this.state.form.profile_picture || "https://lumiere-a.akamaihd.net/v1/images/be_hte_title_cover_final_ed_web_f1ba4992.jpeg"}
+                            name = {this.state.form.name || "Billie Bebé💖"}
+                            age = {this.state.form.age || "19"}
+                            city = {this.state.form.city || "United states"}
+                            followers = {this.state.form.followers || "11k"}
+                            likes = {this.state.form.like || "3k"}
+                            post = {this.state.form.post || "1k"}
+
                         ></Badge>
                     </div>
                     <div className="col">
