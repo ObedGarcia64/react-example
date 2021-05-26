@@ -19,6 +19,57 @@ class BadgeForm extends Component{
                             value={this.props.formValues.name} 
                             />
                         </div>
+                        <div className="form-group mb-2">
+                            <label className="mb-1">
+                                Profile Picture URL
+                            </label>
+                            <input 
+                            type="text" 
+                            className="form-control"
+                            name="profile_pic_url"
+                            onChange={this.props.onChange}
+                            value={this.props.formValues.name} 
+                            />
+                        </div>
+                        <div className="form-group mb-2">
+                            <label className="mb-1">
+                                Badge Hero URL
+                            </label>
+                            <input 
+                            type="text" 
+                            className="form-control"
+                            name="badge_hero_url"
+                            onChange={this.props.onChange}
+                            value={this.props.formValues.name} 
+                            />
+                        </div>
+                        <div className="form-group mb-2">
+                            <label className="mb-1">
+                                Age
+                            </label>
+                            <input 
+                            type="text" 
+                            className="form-control"
+                            name="Age"
+                            onChange={this.props.onChange}
+                            value={this.props.formValues.name} 
+                            />
+                        </div>
+                        <div className="form-group mb-2">
+                            <label className="mb-1">
+                                City
+                            </label>
+                            <input 
+                            type="text" 
+                            className="form-control"
+                            name="City"
+                            onChange={this.props.onChange}
+                            value={this.props.formValues.name} 
+                            />
+                            <button type="submit" className="Submit_Button">
+                                Save
+                            </button>
+                        </div>
                     </form>
                 </div>
             </React.Fragment>
