@@ -3,6 +3,7 @@ import Hero from "../../components/Hero"
 import Badge from "../../components/Badge"
 import "./NewBadge.css"
 import { name } from "faker"
+import BadgeForm from "../../components/BadgeForm"
 
 class NewBadge extends React.Component{
 
@@ -26,7 +27,7 @@ class NewBadge extends React.Component{
             <React.Fragment>
                 <Hero h={"15vh"}></Hero>
                 <div className="container">
-                    <div className="col">
+                    <div className="col-6">
                         <Badge
                             header_picture = {this.state.form.header_picture || "https://coatepec.gob.mx/wp-content/uploads/2019/09/4K-Moving-Stars-Live-Wallpaper-1.jpg"}
                             profile_picture = {this.state.form.profile_picture || "https://lumiere-a.akamaihd.net/v1/images/be_hte_title_cover_final_ed_web_f1ba4992.jpeg"}
@@ -39,8 +40,8 @@ class NewBadge extends React.Component{
 
                         ></Badge>
                     </div>
-                    <div className="col">
-
+                    <div className="col-6">
+                        <BadgeForm></BadgeForm>
                     </div>
                 </div>
             </React.Fragment>
