@@ -1,9 +1,9 @@
 import React from "react"
 import Hero from "../../components/Hero"
-import Button from "../../components/Mainbutton"
-import "./Main.css"
+import Button from "../../components/MainButton"
+import "./main.css"
 
-const Main = () =>{
+const Main = props =>{
     return(
         <React.Fragment>
            <div className="Main">
