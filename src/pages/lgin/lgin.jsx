@@ -25,7 +25,7 @@ class FormLogin extends React.Component{
                         </div>
                         <div className="form-group mb-2">
                             <label className="mb-1">
-                                Profile Picture URL
+                                E-mail
                             </label>
                             <input 
                             type="text" 
@@ -35,7 +35,7 @@ class FormLogin extends React.Component{
                         </div>
                         <div className="form-group mb-2">
                             <label className="mb-1">
-                                Badge Hero URL
+                                Social Media
                             </label>
                             <input 
                             type="text" 
