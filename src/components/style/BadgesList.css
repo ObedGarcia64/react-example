@@ -4,7 +4,7 @@
     display: flex;
     border-radius: 25px;
     position: relative;
-    box-shadow: 0px 0px 40px 0 px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
 }
 
 .Item__background{
@@ -19,7 +19,7 @@
     width: 100%;
 }
 
-.Item__background{
+.Item__profilePicture{
     display: flex;
     align-content: center;
     justify-content: center;

@@ -1,5 +1,7 @@
 import React from "react"
+import {Link} from "react-router-dom";
 import "./style/BadgesList.css"
+
 
 class BadgesListItem extends React.Component{
     render(){
@@ -37,7 +39,9 @@ class BadgesList extends React.Component{
                         {this.props.badges.map( (badge) =>{
                             return(
                                 <div key={badge._id}>
-                                    <BadgesListItem badge={badge}></BadgesListItem>
+                                    <Link className="text-reset text-decoration-none" to = {'/${badge._id}'}>
+                                        <BadgesListItem badge={badge}></BadgesListItem>
+                                    </Link>
                                 </div>
                             );
                         })}

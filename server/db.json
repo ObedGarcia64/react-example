@@ -79,6 +79,26 @@
       "bets": "",
       "state": "",
       "id": 8
+    },
+    {
+      "header_picture": "",
+      "profile_picture": "",
+      "name": "juan",
+      "age": "",
+      "city": "",
+      "bets": "",
+      "state": "",
+      "id": 9
+    },
+    {
+      "header_img_url": "",
+      "profile_picture_url": "https://avatars.githubusercontent.com/u/39440542?v=4",
+      "name": "Lalito",
+      "age": "31",
+      "city": "Chihuahua MX",
+      "bets": "",
+      "state": "",
+      "id": 10
     }
   ]
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import SkeletonItem from "../../components/SkeletonItem"
 import BadgesList from "../../components/BadgesList"
-import api from "../../libs/api"
+import api from "../../libs/fetch"
 import "./Badges.css";
-
+import Button from "../../components/MainButton"
 class Badges extends React.Component{
 
     
@@ -44,7 +44,15 @@ class Badges extends React.Component{
         }
         return(
             <React.Fragment>
-                <div className="Badges__container"></div>
+                <div className="Badges__container">  
+                    <div className="Badges__button">
+                        <Button theme = {"Button-light"}
+                            contentText = {"New Badge"}
+                            link = {"/new"}>
+                            
+                        </Button>
+                    </div>
+                </div>
                 <BadgesList badges={this.state.data}></BadgesList>
             </React.Fragment>
         );

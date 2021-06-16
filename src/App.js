@@ -6,6 +6,7 @@ import FormLogin from './pages/lgin/lgin';
 import Main from "./pages/main/main"
 import NewBadge from "./pages/NewBadge/NewBadge"
 import Badges from "./pages/Badges/Badges"
+import BadgeDetails from "./components/BadgeDetails"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/new" component={NewBadge}></Route>
           <Route exact path="/badges" component={Badges}></Route>
           <Route exact path="/newone" component={FormLogin}></Route>
+          <Route exact path="/:.badgeId" component={BadgeDetails}></Route>
           <Route component={err}></Route>
         </Switch>
       </Layout>

@@ -4,7 +4,7 @@ import Badge from "../../components/Badge"
 import "./NewBadge.css"
 import { name } from "faker"
 import BadgeForm from "../../components/BadgeForm"
-import api from "../../libs/api"
+import api from "../../libs/fetch"
 
 class NewBadge extends React.Component{
     
@@ -12,8 +12,8 @@ class NewBadge extends React.Component{
         loading : false,
         error: null,
         form:{
-            header_picture: "",
-            profile_picture: "",
+            header_img_url: "",
+            profile_picture_url: "",
             name: "",
             age: "",
             city: "",
@@ -38,7 +38,7 @@ class NewBadge extends React.Component{
         try{
             await api.badges.create(this.state.form)
             this.setState({loading:false, error:null})
-            this.props.history.push("/")
+            this.props.history.push("/badges")
         } catch(error){
             this.setState({loading:false, error: error})
             
