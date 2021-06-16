@@ -30,7 +30,7 @@ class FormLogin extends React.Component{
                             <input 
                             type="text" 
                             className="form-control"
-                            name="profile_picture" 
+                            name="profile_picture_url" 
                             />
                         </div>
                         <div className="form-group mb-2">
@@ -40,7 +40,7 @@ class FormLogin extends React.Component{
                             <input 
                             type="text" 
                             className="form-control"
-                            name="header_picture" 
+                            name="profile_picture_url" 
                             />
                         </div>
                         <div className="form-group mb-2">

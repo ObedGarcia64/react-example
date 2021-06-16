@@ -1,5 +1,84 @@
 {
-    "badges":[
-        
-    ]
+  "badges": [
+    {
+      "header_picture": "",
+      "profile_picture": "",
+      "name": "",
+      "age": "",
+      "city": "",
+      "bets": "",
+      "state": "",
+      "id": 1
+    },
+    {
+      "header_picture": "",
+      "profile_picture": "",
+      "name": "",
+      "age": "",
+      "city": "",
+      "bets": "",
+      "state": "",
+      "id": 2
+    },
+    {
+      "header_picture": "",
+      "profile_picture": "",
+      "name": "",
+      "age": "",
+      "city": "",
+      "bets": "",
+      "state": "",
+      "id": 3
+    },
+    {
+      "header_picture": "",
+      "profile_picture": "",
+      "name": "",
+      "age": "",
+      "city": "",
+      "bets": "",
+      "state": "",
+      "id": 4
+    },
+    {
+      "header_picture": "",
+      "profile_picture": "",
+      "name": "",
+      "age": "",
+      "city": "",
+      "bets": "",
+      "state": "",
+      "id": 5
+    },
+    {
+      "header_picture": "",
+      "profile_picture": "",
+      "name": "",
+      "age": "",
+      "city": "",
+      "bets": "",
+      "state": "",
+      "id": 6
+    },
+    {
+      "header_picture": "",
+      "profile_picture": "",
+      "name": "",
+      "age": "",
+      "city": "",
+      "bets": "",
+      "state": "",
+      "id": 7
+    },
+    {
+      "header_picture": "",
+      "profile_picture": "",
+      "name": "",
+      "age": "",
+      "city": "",
+      "bets": "",
+      "state": "",
+      "id": 8
+    }
+  ]
 }

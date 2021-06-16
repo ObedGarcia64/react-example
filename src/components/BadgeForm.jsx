@@ -1,7 +1,7 @@
-import React, {Component} from "react"
+import React from "react"
 import './style/BadgeForm.css'
 
-class BadgeForm extends Component{
+class BadgeForm extends React.Component{
     render(){
         return(
             <React.Fragment>
@@ -26,9 +26,9 @@ class BadgeForm extends Component{
                             <input 
                             type="text" 
                             className="form-control"
-                            name="profile_picture"
+                            name="profile_picture_url"
                             onChange={this.props.onChange}
-                            value={this.props.formValues.profile_picture} 
+                            value={this.props.formValues.profile_picture_url} 
                             />
                         </div>
                         <div className="form-group mb-2">
@@ -38,9 +38,9 @@ class BadgeForm extends Component{
                             <input 
                             type="text" 
                             className="form-control"
-                            name="header_picture"
+                            name="header_img_url"
                             onChange={this.props.onChange}
-                            value={this.props.formValues.header_picture} 
+                            value={this.props.formValues.header_img_url} 
                             />
                         </div>
                         <div className="form-group mb-2">

@@ -1,5 +1,6 @@
 import React from "react";
 import SkeletonItem from "../../components/SkeletonItem"
+import BadgesList from "../../components/BadgesList"
 import api from "../../libs/api"
 import "./Badges.css";
 
@@ -9,7 +10,7 @@ class Badges extends React.Component{
     state={
         loading:true,
         error: null,
-        data: undefined
+        data: undefined,
     }
 
     componentDidMount(){
@@ -18,23 +19,23 @@ class Badges extends React.Component{
     }
 
     fetchData = async() =>{
-        this.setState({loading: true, error: null})
+        this.setState({loading: true, error: null});
         try{
             const data = await api.badges.list();
             data.reverse()
-            this.setState({loading: false, data: data})
+            this.setState({loading: false, data: data});
 
         }catch(error){
-            this.setState({loading: false, error: error, data: []})
+            this.setState({loading: false, error: error, data: []});
         }
     }
 
     setFetchInterval(){
-        this.interval = setInterval(this.fetchData, 3000)
+        this.interval = setInterval(this.fetchData, 3000);
     }
 
     componentWillMount(){
-        clearInterval(this.interval)
+        clearInterval(this.interval);
     }
 
     render(){
@@ -43,7 +44,8 @@ class Badges extends React.Component{
         }
         return(
             <React.Fragment>
-                <h1>All Badges</h1>
+                <div className="Badges__container"></div>
+                <BadgesList badges={this.state.data}></BadgesList>
             </React.Fragment>
         );
     }
