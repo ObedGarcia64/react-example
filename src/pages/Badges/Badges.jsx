@@ -4,6 +4,7 @@ import BadgesList from "../../components/BadgesList"
 import api from "../../libs/fetch"
 import "./Badges.css";
 import Button from "../../components/MainButton"
+import PageError from "../../components/PageError"
 class Badges extends React.Component{
 
     
@@ -15,7 +16,9 @@ class Badges extends React.Component{
 
     componentDidMount(){
         this.fetchData();
-        this.setFetchInterval();
+        if(this.state.error){
+            this.setFetchInterval();
+        }
     }
 
     fetchData = async() =>{
@@ -42,17 +45,12 @@ class Badges extends React.Component{
         if(this.state.loading===true && !this.state.data){
             return <SkeletonItem></SkeletonItem>
         }
+
+        if(this.state.error){
+            return <PageError error ={this.state.error.message}>NetWork Error when attempting to fetch resource</PageError>
+        }
         return(
             <React.Fragment>
-                <div className="Badges__container">  
-                    <div className="Badges__button">
-                        <Button theme = {"Button-light"}
-                            contentText = {"New Badge"}
-                            link = {"/new"}>
-                            
-                        </Button>
-                    </div>
-                </div>
                 <BadgesList badges={this.state.data}></BadgesList>
             </React.Fragment>
         );

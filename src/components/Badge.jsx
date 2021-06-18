@@ -22,16 +22,12 @@ class Badge extends Component {
                     <div className="Badge__info container pt-3">
                         <div className="row">
                             <div className="col">
-                                <h4 className="text-center fw bold">{this.props.followers}</h4>
-                                <p className="text-center">Followers</p>
+                                <h4 className="text-center fw bold">{this.props.bets}</h4>
+                                <p className="text-center">bets</p>
                             </div>
                             <div className="col">
-                            <h4 className="text-center fw bold">{this.props.likes}</h4>
-                                <p className="text-center">Likes</p>
-                            </div>
-                            <div className="col">
-                            <h4 className="text-center fw bold">{this.props.post}</h4>
-                                <p className="text-center">Pictures</p>
+                            <h4 className="text-center fw bold">{this.props.state}</h4>
+                                <p className="text-center">state</p>
                             </div>
                         </div>
                     </div>

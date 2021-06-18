@@ -1,0 +1,51 @@
+.Loader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.lds-grid{
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.lds-grid div{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    animation: lsd-grid 1.2s linear infinite;
+}
+
+.lsd-grid div:nth-child(1){
+    top: 12px;
+    left: 12px;
+    animation-delay: 0s;
+}
+
+.lsd-grid div:nth-child(2){
+    top: 12px;
+    left: 24px;
+    animation-delay: 0.4s;
+}
+
+.lsd-grid div:nth-child(3){
+    top: 12px;
+    left: 36px;
+    animation-delay: 0.8s;
+}
+
+@keyframes lsd-grid{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity:0.5;
+    }
+}

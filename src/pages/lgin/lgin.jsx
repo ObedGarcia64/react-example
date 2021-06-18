@@ -4,6 +4,8 @@ import Badge from "../../components/Badge"
 import { name } from "faker"
 import BadgeForm from "../../components/BadgeForm"
 import api from "../../libs/api"
+import Button from "../../components/MainButton"
+
 import "./lgin.css"
 
 class FormLogin extends React.Component{
@@ -15,7 +17,7 @@ class FormLogin extends React.Component{
                     <form onSubmit={this.props.onSubmit}>
                         <div className="form-group mb-2">
                             <label className="mb-1">
-                                Name
+                                Username or E-mail
                             </label>
                             <input 
                             type="text" 
@@ -25,46 +27,18 @@ class FormLogin extends React.Component{
                         </div>
                         <div className="form-group mb-2">
                             <label className="mb-1">
-                                E-mail
+                                Password
                             </label>
                             <input 
-                            type="text" 
+                            type="password" 
                             className="form-control"
                             name="profile_picture_url" 
                             />
+                            
                         </div>
-                        <div className="form-group mb-2">
-                            <label className="mb-1">
-                                Social Media
-                            </label>
-                            <input 
-                            type="text" 
-                            className="form-control"
-                            name="profile_picture_url" 
-                            />
-                        </div>
-                        <div className="form-group mb-2">
-                            <label className="mb-1">
-                                Age
-                            </label>
-                            <input 
-                            type="text" 
-                            className="form-control"
-                            name="age"
-                            />
-                        </div>
-                        <div className="form-group mb-2">
-                            <label className="mb-1">
-                                City
-                            </label>
-                            <input 
-                            type="text" 
-                            className="form-control"
-                            name="city" 
-                            />
-                            <button type="submit" className="Submit__button">
-                                Save
-                            </button>
+                        <div>
+                            <Button contentText={"Access"} theme={"Button"} link={"/badges"}></Button>
+                            <Button contentText={"Register"} theme={"Button"} link={"/signin"}></Button>
                         </div>
                     </form>
                 </div>

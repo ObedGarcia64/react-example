@@ -53,13 +53,13 @@ class NewBadge extends React.Component{
                     <div className="row">
                         <div className="col-6">
                             <Badge 
-                                header_img_url = {this.state.form.header_img_url  ||  "https://images.pexels.com/photos/7594614/pexels-photo-7594614.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"}
-                                profile_picture_url = {this.state.form.profile_picture_url || "https://images.pexels.com/photos/2216607/pexels-photo-2216607.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"}
-                                name = {this.state.form.name || "Lucas Willhem"}
-                                age = {this.state.form.age || "27"}
-                                city = {this.state.form.city || "Madrid"}
-                                bets = {this.state.bets || "2,000"}
-                                state = {this.state.state || "12"}
+                                header_img_url = {this.state.form.header_img_url  ||  "https://i.pinimg.com/474x/6a/96/bb/6a96bbd8b78d7c6b473024e043b71408.jpg"}
+                                profile_picture_url = {this.state.form.profile_picture_url || "https://ccploreto.sacpro.pe/uploads/images/default.jpg"}
+                                name = {this.state.form.name || "Name Last Name"}
+                                age = {this.state.form.age || "Age"}
+                                city = {this.state.form.city || "City"}
+                                bets = {this.state.bets || "bets"}
+                                state = {this.state.state || "State"}
                             ></Badge>
                         </div>     
                         <div className="col-6">

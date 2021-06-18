@@ -7,6 +7,9 @@ import Main from "./pages/main/main"
 import NewBadge from "./pages/NewBadge/NewBadge"
 import Badges from "./pages/Badges/Badges"
 import BadgeDetails from "./components/BadgeDetails"
+import EditBadge from "./pages/EditBadge/EditBadge"
+import Signin from './pages/signin/signin';
+
 
 function App() {
   return (
@@ -16,9 +19,12 @@ function App() {
           <Route exact path="/" component={Main}></Route>
           <Route exact path="/new" component={NewBadge}></Route>
           <Route exact path="/badges" component={Badges}></Route>
+          <Route exact path="/signin" component={Signin}></Route>
           <Route exact path="/newone" component={FormLogin}></Route>
-          <Route exact path="/:.badgeId" component={BadgeDetails}></Route>
+          <Route exact path="/:badgeId" component={BadgeDetails}></Route>
+          <Route exact path="/:badgeId/edit" component={EditBadge}></Route>
           <Route component={err}></Route>
+          
         </Switch>
       </Layout>
     </BrowserRouter>
