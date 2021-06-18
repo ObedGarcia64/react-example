@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://api-example-badges-by-og.herokuapp.com/';
  
 async function callApi(endpoint, options = {}) {
   
